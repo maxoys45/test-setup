@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  height: 100vh;
+}
+
+.machine {
+
+}
+
+.reel {
+  width: 300px;
+  border: 1px solid black;
+  display: flex;
+  height: 100px;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+.col {
+  flex: 0 0 percentage(1/3);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.slot {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  border: 1px solid white;
+  flex: 0 0 auto;
+  
+  &.slot-cherry {
+    background: red;
+    color: white;
+  }
+  
+  &.slot-club {
+    background: #222;
+    color: white;
+  }
+  
+  &.slot-apple {
+    background: green;
+    color: white;
+  }
+  
+  &.slot-gold {
+    background: yellow;
+  }
+}
+
+.spin {
+  margin-top: 1em;
+  font-size: 2em;
+}
